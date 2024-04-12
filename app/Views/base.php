@@ -15,7 +15,6 @@
 	<main>
 		<?php require_once 'Layout/flash.php'; ?>
 		<?= $content; ?>
-		<h1>Hello</h1>
 	</main>
 
 	<?php require_once 'Layout/footer.php'; ?>
