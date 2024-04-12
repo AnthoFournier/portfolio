@@ -11,6 +11,7 @@ export async function useFetchWeather(endUrl) {
         const response = await fetch(API_URL + endUrl);
         if (!response.ok) throw new Error('Error fetching weather', response.status, response.statusText);
         const data = await response.json();
+        console.log('Steph le BG');
         return data;
     } catch (e) {
         console.error(e);
