@@ -1,0 +1,16 @@
+{
+    "name": "sass-app-portfolio",
+    "version": "1.0.0",
+    "description": "portfolio",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./app/sass/main.scss ./app/public/assets/css/style.min.css --style compressed"
+    },
+    "author": "anthony fournier",
+    "license": "ISC",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.5.2",
+        "bootstrap": "^5.3.3",
+        "sass": "^1.74.1"
+    }
+}
