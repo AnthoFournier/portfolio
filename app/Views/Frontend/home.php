@@ -267,21 +267,10 @@
 
 <!-- section exemple de petites application JS pour incrémenter mon portfolio -->
 <!-- app mété avec appel api -->
-<section id="app-meteo">
+<section id="app-meteo" class="text-center">
 	<!-- btn pour les requetes -->
-	<div class="container text-center">
-		<h2 class="fw-bold">Application météo</h2>
-		<p class="fw-sm">Consultez la météo en temps réel de votre ville</p>
-		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto" data-city="paris">Paris</button>
-		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto" data-city="lyon">Lyon</button>
-		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto" data-city="tignes">Tignes</button>
-		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto" data-city="saint-bonnet-le-courreau">Saint-Bonnet-Le-Courreau</button>
-		<!-- ici les résultats de mon app mété que l'on injecte dans le DOM -->
-		<!-- Map -->
-		<div id="map" class="mt-2 rounded border"></div>
-	</div>
-
-
+	<h2 class="fw-bold">Application météo</h2>
+	<p class="text-center">Cliqué sur le marker de votre ville afin de découvrir la météo en temps</p>
 	<div id="weather-result" class="d-none">
 		<div class="container py-5 h-100">
 
@@ -324,6 +313,9 @@
 			</div>
 
 		</div>
+	</div>
+	<div class="container text-center">
+		<div id="map" class="mt-2 rounded border"></div>
 	</div>
 </section>
 <!-- début de la card app mété -->

@@ -1,0 +1,31 @@
+{
+    "city_info": {
+        "name": "Bransles",
+        "country": "France",
+        "latitude": "48.1516685",
+        "longitude": "2.8333330",
+        "elevation": "110",
+        "sunrise": "07:03",
+        "sunset": "18:52"
+    },
+    "forecast_info": {},
+    "current_condition": {
+        "date": "13.03.2024",
+        "hour": "16:00",
+        "tmp": 15,
+        "wnd_spd": 8,
+        "wnd_gust": 0,
+        "wnd_dir": "SO",
+        "pressure": 1015.1,
+        "humidity": 65,
+        "condition": "Ciel voilé",
+        "condition_key": "ciel-voile",
+        "icon": "https://prevision-meteo.ch/style/images/icon/ciel-voile.png",
+        "icon_big": "https://prevision-meteo.ch/style/images/icon/ciel-voile-big.png"
+    },
+    "fcst_day_0": {},
+    "fcst_day_1": {},
+    "fcst_day_2": {},
+    "fcst_day_3": {},
+    "fcst_day_4": {}
+}

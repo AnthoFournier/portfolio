@@ -1,0 +1,38 @@
+{
+    "saint-etienne-42": {
+        "lat": 45.4397,
+        "lng": 4.3872
+    },
+    "lyon": {
+        "lat": 45.75,
+        "lng": 4.85
+    },
+    "paris": {
+        "lat": 48.8589384,
+        "lng": 2.2646349
+    },
+    "marseille": {
+        "lat": 43.280477,
+        "lng": 5.215842
+    },
+    "nice": {
+        "lat": 43.7032898,
+        "lng": 7.1704116
+    },
+    "saint-bonnet-le-courreau": {
+        "lat": 45.6542481,
+        "lng": 3.8718611
+    },
+    "montbrison": {
+        "lat": 45.6,
+        "lng": 4.0667
+    },
+    "roanne": {
+        "lat": 46.0333,
+        "lng": 4.0667
+    },
+    "clermont-ferrand": {
+        "lat": 45.7871015,
+        "lng": 3.0715081
+    }
+}
