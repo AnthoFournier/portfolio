@@ -1,6 +1,9 @@
 const btnWeather = document.querySelectorAll('#btn-weather');
 import { useFetchWeather } from './services/useFetchWeather.js';
 import { displayWeatherCard } from './components/weatherCard.js';
+import createMap from './components/createMap.js';
+
+createMap(document.querySelector('#map'));
 
 for (const button of btnWeather) {
     button.addEventListener('click', async function () {

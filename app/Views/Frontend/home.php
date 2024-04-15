@@ -273,10 +273,16 @@
 		<h2 class="fw-bold">Application météo</h2>
 		<p class="fw-sm">Consultez la météo en temps réel de votre ville</p>
 		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto" data-city="paris">Paris</button>
-		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto me-2" data-city="lyon">Lyon</button>
+		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto" data-city="lyon">Lyon</button>
+		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto" data-city="tignes">Tignes</button>
+		<button id="btn-weather" class="btn btn-outline-primary fw-bold mt-auto" data-city="saint-bonnet-le-courreau">Saint-Bonnet-Le-Courreau</button>
 		<!-- ici les résultats de mon app mété que l'on injecte dans le DOM -->
+		<!-- Map -->
+		<div id="map" class="mt-2 rounded border"></div>
 	</div>
-	<div id="weather-result">
+
+
+	<div id="weather-result" class="d-none">
 		<div class="container py-5 h-100">
 
 			<div class="row d-flex justify-content-center align-items-center h-100">
@@ -303,7 +309,7 @@
 										</span></div>
 									<div><i class="fas fa-tint fa-fw" style="color: #F1F1F1;"></i> <span class="ms-1 text-white"> 84% </span>
 									</div>
-									<div><i class="fas fa-sun fa-fw" style="color: #F1F1F1;"></i> <span class="ms-1 text-white"> 0.2h </span>
+									<div><i class="fas fa-tachometer-alt" style="color: #F1F1F1;"></i> <span class="ms-1 text-white"> 0.2h </span>
 									</div>
 								</div>
 								<div>
@@ -359,4 +365,5 @@
 	</div>
 </section> -->
 
+<script src="assets/js/bundle.js" type="module"></script>
 <script src="assets/js/app-meteo.js" type="module"></script>

@@ -4,13 +4,23 @@
     "description": "portfolio",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch ./app/sass/main.scss ./app/public/assets/css/style.min.css --style compressed"
+        "sass": "sass --watch ./app/sass/main.scss ./app/public/assets/css/style.min.css --style compressed",
+        "build": "webpack --mode production"
     },
     "author": "anthony fournier",
     "license": "ISC",
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.5.2",
         "bootstrap": "^5.3.3",
+        "leaflet": "^1.9.4",
         "sass": "^1.74.1"
+    },
+    "devDependencies": {
+        "css-loader": "^7.1.1",
+        "file-loader": "^6.2.0",
+        "sass-loader": "^14.2.0",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4"
     }
 }
