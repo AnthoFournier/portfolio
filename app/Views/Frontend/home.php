@@ -264,61 +264,16 @@
 		</div>
 </section>
 
-
-<!-- section exemple de petites application JS pour incrémenter mon portfolio -->
 <!-- app mété avec appel api -->
 <section id="app-meteo" class="text-center">
 	<!-- btn pour les requetes -->
 	<h2 class="fw-bold">Application météo</h2>
-	<p class="text-center">Cliqué sur le marker de votre ville afin de découvrir la météo en temps</p>
-	<div id="weather-result" class="d-none">
-		<div class="container py-5 h-100">
-
-			<div class="row d-flex justify-content-center align-items-center h-100">
-				<div class="col-md-8 col-lg-6 col-xl-4">
-
-					<div class="card bg-dark rounded-4">
-						<div class="card-body p-4">
-
-							<!-- TOP -->
-
-							<div id="top" class="d-flex">
-								<h6 class="flex-grow-1 text-white">Warsaw</h6>
-								<h6 class="text-white">15:07</h6>
-							</div>
-
-							<div id="center" class="d-flex flex-column text-center mt-5 mb-4">
-								<h6 class="display-4 mb-0 fw-bold text-white"> 13°C </h6>
-								<span class="small text-white">Stormy</span>
-							</div>
-
-							<div id="bottom" class="d-flex align-items-center">
-								<div class="flex-grow-1" style="font-size: 1rem;">
-									<div><i class="fas fa-wind fa-fw" style="color: #F1F1F1;"></i> <span class="ms-1 text-white"> 40 km/h
-										</span></div>
-									<div><i class="fas fa-tint fa-fw" style="color: #F1F1F1;"></i> <span class="ms-1 text-white"> 84% </span>
-									</div>
-									<div><i class="fas fa-tachometer-alt" style="color: #F1F1F1;"></i> <span class="ms-1 text-white"> 0.2h </span>
-									</div>
-								</div>
-								<div>
-									<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp" width="100px">
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-		</div>
-	</div>
+	<p class="text-center">Cliqué sur le marker de votre ville afin de découvrir la météo en temps réel</p>
 	<div class="container text-center">
-		<div id="map" class="mt-2 rounded border"></div>
+		<div id="map" class="mt-2 shadow p-3 mb-5 bg-body-tertiary rounded-4"></div>
 	</div>
+	<a href="#" class="btn btn-outline-primary fw-bold mt-auto">Documentation app météo</a>
 </section>
-<!-- début de la card app mété -->
 
 <!-- section Audit SEO -->
 <!-- <section id="audit-seo">

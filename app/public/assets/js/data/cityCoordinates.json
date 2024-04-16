@@ -34,5 +34,13 @@
     "clermont-ferrand": {
         "lat": 45.7871015,
         "lng": 3.0715081
+    },
+    "mornand-en-forez": {
+        "lat": 45.6732934,
+        "lng": 4.077859
+    },
+    "sail-sous-couzan": {
+        "lat": 45.7367543,
+        "lng": 3.9395189
     }
 }

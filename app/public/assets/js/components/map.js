@@ -4,10 +4,6 @@ import cityCoordinates from '../data/cityCoordinates.json';
 import { useFetchWeather } from '../services/useFetchWeather.js';
 import { displayWeatherCard } from './weatherCard.js';
 import L from 'leaflet';
-
-// Répare les icônes de marqueur Leaflet
-// @link https://cescobaz.com/2023/06/14/setup-leaflet-with-svelte-and-vite/
-// Import the necessary marker images from the Leaflet package.
 import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
 import markerIconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
@@ -20,10 +16,10 @@ import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
  *
  * @see {@link https://cescobaz.com/2023/06/14/setup-leaflet-with-svelte-and-vite/}
  */
-L.Icon.Default.prototype.options.iconUrl = markerIconUrl; // Set the default marker icon URL.
-L.Icon.Default.prototype.options.iconRetinaUrl = markerIconRetinaUrl; // Set the default marker icon URL for Retina displays.
-L.Icon.Default.prototype.options.shadowUrl = markerShadowUrl; // Set the default marker shadow URL.
-L.Icon.Default.imagePath = ''; // Set the default image path to an empty string to prevent Leaflet from adding a prefix to the image path.
+L.Icon.Default.prototype.options.iconUrl = markerIconUrl;
+L.Icon.Default.prototype.options.iconRetinaUrl = markerIconRetinaUrl;
+displays.L.Icon.Default.prototype.options.shadowUrl = markerShadowUrl;
+L.Icon.Default.imagePath = '';
 
 /**
  * Cette fonction crée une carte Leaflet et l'ajoute à la div avec l'ID spécifié.
@@ -42,8 +38,6 @@ L.Icon.Default.imagePath = ''; // Set the default image path to an empty string 
  */
 export default async function createMap(id) {
     const location = await useLocation();
-
-    // Je zoome à 13 si la géolocalisation est activée
     let zoom = location.isGeolocationAvailable ? 12 : 9;
 
     const map = L.map(id).setView([location.lat, location.lng], zoom);
@@ -56,10 +50,10 @@ export default async function createMap(id) {
         const tempMarker = L.marker([cityCoordinates[city].lat, cityCoordinates[city].lng]).addTo(map);
         tempMarker.addEventListener('click', async function () {
             // Je positionne la carte sur le marqueur et je dézoome
-            map.setView([cityCoordinates[city].lat, cityCoordinates[city].lng], 6);
+            map.setView([cityCoordinates[city].lat, cityCoordinates[city].lng], 12);
             const response = await useFetchWeather(city);
-            const weatherCard = displayWeatherCard(response);
-            this.bindPopup(weatherCard).openPopup();
+            const weatherCardElement = displayWeatherCard(response);
+            this.bindPopup(weatherCardElement).openPopup();
         });
     }
 }
