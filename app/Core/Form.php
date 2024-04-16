@@ -201,6 +201,28 @@ abstract class Form
 		return $this;
 	}
 
+	public function addParagraph(string $text, array $attributs = []): self
+	{
+		$this->formCode .= "<p";
+
+		$this->formCode .= !empty($attributs) ? $this->addAttribute($attributs) . '>' : '>';
+
+		$this->formCode .= "$text</p>";
+
+		return $this;
+	}
+
+	public function addLink(string $text, string $href, array $attributs = []): self
+	{
+		$this->formCode .= "<a href=\"$href\"";
+
+		$this->formCode .= !empty($attributs) ? $this->addAttribute($attributs) . '>' : '>';
+
+		$this->formCode .= "$text</a>";
+
+		return $this;
+	}
+
 	/**
 	 * Validation du formulaire (si tous les champs sont remplis)
 	 *

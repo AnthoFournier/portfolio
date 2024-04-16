@@ -6,7 +6,7 @@ import { displayWeatherCard } from './weatherCard.js';
 import L from 'leaflet';
 import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
 import markerIconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
-import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
+// import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
 
 /**
  * Ce bloc de code corrige les icônes de marqueur Leaflet.
@@ -18,7 +18,7 @@ import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
  */
 L.Icon.Default.prototype.options.iconUrl = markerIconUrl;
 L.Icon.Default.prototype.options.iconRetinaUrl = markerIconRetinaUrl;
-displays.L.Icon.Default.prototype.options.shadowUrl = markerShadowUrl;
+// displays.L.Icon.Default.prototype.options.shadowUrl = markerShadowUrl;
 L.Icon.Default.imagePath = '';
 
 /**

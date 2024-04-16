@@ -43,7 +43,14 @@
 					</li>
 				</ul>
 				<!-- end dropdown -->
-				<button class="btn btn-outline-light fw-bold" type="submit">Connexion</button>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="/login" class="btn btn-outline-light fw-bold">Connexion</a>
+					</li>
+					<li class="nav-item">
+						<a href="/register" class="btn btn-outline-light fw-bold ms-2">Inscription</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>

@@ -121,7 +121,6 @@
 	</div>
 </section>
 
-
 <!-- section choix des outils VS-Code, Github, Docker et expliquer pourquoi j'ai décider d'utiliser ses outils-->
 <section id="tools">
 	<div class="container mb-4">
@@ -270,10 +269,12 @@
 	<h2 class="fw-bold">Application météo</h2>
 	<p class="text-center">Cliqué sur le marker de votre ville afin de découvrir la météo en temps réel</p>
 	<div class="container text-center">
-		<div id="map" class="mt-2 shadow p-3 mb-5 bg-body-tertiary rounded-4"></div>
+		<div id="map" class="mt-2 shadow p-3 mb-3 bg-body-tertiary rounded-4"></div>
 	</div>
-	<a href="#" class="btn btn-outline-primary fw-bold mt-auto">Documentation app météo</a>
+	<a href="#" class="btn mb-3 btn-outline-primary fw-bold mt-auto">Documentation app météo</a>
 </section>
+
+
 
 <!-- section Audit SEO -->
 <!-- <section id="audit-seo">
