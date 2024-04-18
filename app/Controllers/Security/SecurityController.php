@@ -58,6 +58,7 @@ class SecurityController extends BaseController
 			$lastName = trim(strip_tags($_POST['lastName']));
 			$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 			$password = password_hash($_POST['password'], PASSWORD_ARGON2I);
+			// var_dump($_POST);
 
 			// Vérification des contraintes
 			if ($email) {

@@ -44,12 +44,37 @@
 				</ul>
 				<!-- end dropdown -->
 				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a href="/login" class="btn btn-outline-light fw-bold">Connexion</a>
-					</li>
-					<li class="nav-item">
-						<a href="/register" class="btn btn-outline-light fw-bold ms-2">Inscription</a>
-					</li>
+					<!-- Voir comment insérer ou rédiriger pour les users qui n'ont pas de ROLE ADMIND sur une application SPORT & SANTE avec un programme établie par l'utilisateur des courbes de progression une partie repas avec la liste de nouriture le programme des repas des idées de recettetc...  -->
+					<?php if (!empty($_SESSION['user'])) : ?>
+						<?php if (in_array('ROLE_ADMIN', $_SESSION['user']['roles'])) : ?>
+							<div class="dropdown me-2">
+								<button class="btn btn-outline-light fw-bold dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Admin
+								</button>
+								<div class="dropdown-menu" aria-labelledby="triggerId">
+									<a class="dropdown-item" href="/admin/users">Gestionnaire de users</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="/admin/articles">Gestionnaire d'articles</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="/admin/category">Gestionnaire catégories</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="/admin/articles/create">Créer votre article</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="/admin/category/create">Créer votre catégorie</a>
+								</div>
+							</div>
+						<?php endif; ?>
+						<li class="nav-item">
+							<a href="/logout" class="btn btn-outline-danger fw-bold">Déconnexion</a>
+						</li>
+					<?php else : ?>
+						<li class="nav-item">
+							<a href="/login" class="btn btn-outline-light fw-bold">Connexion</a>
+						</li>
+						<li class="nav-item">
+							<a href="/register" class="btn btn-outline-light fw-bold ms-2">Inscription</a>
+						</li>
+					<?php endif; ?>
 				</ul>
 			</div>
 		</div>

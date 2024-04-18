@@ -8,8 +8,8 @@ use PDOException;
 
 class Db extends PDO
 {
-	private const DB_HOST = "mvc-db-1";
-	private const DB_NAME = "demo_mvc";
+	private const DB_HOST = "db";
+	private const DB_NAME = "portfolio";
 	private const DB_USER = "root";
 	private const DB_PASSWORD = "root";
 	private static ?Db $instance = null;
