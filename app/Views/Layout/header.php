@@ -16,6 +16,9 @@
 					<li class="nav-item">
 						<a class="nav-link text-white fw-bold" href="#">Me recruter</a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white fw-bold" href="/articles">Blog</a>
+					</li>
 				</ul>
 				<ul class="navbar-nav">
 					<li class="nav-item">

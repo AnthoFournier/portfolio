@@ -21,12 +21,16 @@ class Article extends Model
 		$this->table = 'articles';
 	}
 
-	public function getAuthor(): User
+	public function getAuthor(): ?User
 	{
 		$user = $this->runQuery("SELECT * FROM users WHERE id = :id", [
 			'id' => $this->userId
 		])->fetch();
-
+		// Vérifie si $user est false et gère le cas
+		if ($user === false) {
+			// Retourne null ou lance une exception
+			return null; // ou lancez une exception, selon votre gestion d'erreur préférée
+		}
 		return (new User)->hydrate($user);
 	}
 

@@ -74,7 +74,6 @@ abstract class Model extends Db
 	 */
 	public function findOneBy(array $filters): array|bool
 	{
-		// SELECT * FROM users WHERE lastName = :lastName AND firstName = :firstName
 
 		$champs = [];
 		$params = [];
