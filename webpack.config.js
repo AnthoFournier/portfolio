@@ -1,12 +1,11 @@
 const path = require('path');
-
 module.exports = {
     mode: 'development',
     entry: './app/public/assets/js/app-meteo.js',
     output: {
-        path: path.resolve(__dirname, './app/public/assets/js'), // Le dossier de sortie pour bundle.js
+        path: path.resolve(__dirname, './app/public/assets/js'),
         filename: 'bundle.js',
-        publicPath: '/assets/js/', // Le chemin public doit correspondre au chemin de sortie
+        publicPath: '/assets/js/',
     },
     module: {
         rules: [
@@ -15,11 +14,9 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                // Cette règle unique pour les images et les polices est suffisante
                 test: /\.(png|svg|jpg|jpeg|gif|woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
                 generator: {
-                    // Ici, on définit le chemin relatif pour le dossier de sortie des assets
                     filename: '../img/[name].[contenthash][ext]',
                 },
             },

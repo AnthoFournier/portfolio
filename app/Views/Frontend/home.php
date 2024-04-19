@@ -267,7 +267,7 @@
 <section id="app-meteo" class="text-center">
 	<!-- btn pour les requetes -->
 	<h2 class="fw-bold">Application météo</h2>
-	<p class="text-center">Cliqué sur le marker de votre ville afin de découvrir la météo en temps réel</p>
+	<p class="text-center">Cliqué sur le marker de votre ville afin de découvrir la météo en temps réel !</p>
 	<div class="container text-center">
 		<div id="map" class="mt-2 shadow p-3 mb-3 bg-body-tertiary rounded-4"></div>
 	</div>
